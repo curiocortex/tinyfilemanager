@@ -2,7 +2,7 @@ name: filemanager
 services:
     tinyfilemanager:
         volumes:
-            - /home/sajjad/filemanager:/var/www/html/data
+            - /:/var/www/html/data
         ports:
             - 1021:80
         restart: always
