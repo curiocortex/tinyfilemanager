@@ -2,9 +2,9 @@ name: filemanager
 services:
     tinyfilemanager:
         volumes:
-            - /absolute/path:/var/www/html/data
+            - /home/sajjad/filemanager:/var/www/html/data
         ports:
-            - 80:80
+            - 1021:80
         restart: always
         container_name: tinyfilemanager
         image: tinyfilemanager/tinyfilemanager:master
